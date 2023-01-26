@@ -1,0 +1,140 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: rgb(92, 32, 92);
+}
+
+.list1 {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  column-gap: 50px;
+  row-gap: 50px;
+  place-content: center;
+  padding-bottom: 10px;
+
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border-left: 6px red dashed;
+  border-top: 6px yellow dashed;
+  border-radius: 50%;
+  margin-top: 250px;
+  margin-left: 600px;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.list {
+  background-color: rgba(255, 255, 255, 0.849);
+  border: 2px solid black;
+  margin-top: 15px;
+padding: 9px;
+}
+
+.list img {
+  margin-top: 20px;
+  transition: all 1s;
+  width: 300px;
+  height: 400px;
+}
+.list h3
+{
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 5px;
+}
+.list img:hover {
+  transform: scale(1.09);
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid red;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: coral;
+
+
+}
+.nav input
+{
+  padding: 5px;
+  border-radius: 5px;
+  width: 400px;
+ margin-left: 30px;
+ 
+}
+.titl {
+  color: white;
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  border: 55px solid balck;
+  border-bottom: 5px solid yellow;
+  background-color: black;
+  padding: 5px;
+  height: 30px;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+}
+
+.title {
+  color: white;
+  border: 1px solid grey;
+  width: auto;
+  border-radius: 20px;
+  background-color: rgb(158, 135, 7);
+  text-decoration: none;
+}
+
+.details {
+  border: 2px solid red;
+  color: white;
+}
+
+.error {
+  color: white;
+}
+
+.det {
+  border: 2px solid black;
+  width: 500px;
+  height: auto;
+  background-color: rgb(150, 27, 52);
+ text-align: justify;
+  padding: 50px;
+  margin-left: 400px;
+}
+
+.det img {
+  width: 500px;
+  height: 500px;
+}
+.det a
+{
+  font-weight: bold;
+  color: red;
+}
